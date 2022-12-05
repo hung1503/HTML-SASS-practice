@@ -1,0 +1,13 @@
+@use "variables/fonts.scss";
+@use "variables/colors.scss";
+
+@use "sections/header.scss";
+
+body,
+html {
+  font-family: fonts.$fontFamily;
+  background-color: colors.$backgroundColor;
+  color: colors.$textColor;
+  margin: 0;
+  padding: 0;
+}

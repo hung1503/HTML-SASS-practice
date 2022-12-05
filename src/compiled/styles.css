@@ -1,0 +1,43 @@
+.headerSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.headerSection a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+.headerSection .logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.headerSection .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerSection .navbar a {
+  margin: 0 0.6rem;
+}
+.headerSection .searchIcon {
+  font-size: 1.2rem;
+}
+
+.fixedText {
+  position: fixed;
+  top: 50%;
+  left: -60px;
+  transform: rotate(-90deg);
+  z-index: 99;
+}
+
+body,
+html {
+  font-family: "Corben", cursive;
+  background-color: #363643;
+  color: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
