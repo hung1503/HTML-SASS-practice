@@ -1,7 +1,7 @@
 .headerSection {
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3rem;
 }
 .headerSection a {
   text-decoration: none;
@@ -35,11 +35,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "pin1 pin1 pin2 pin3" "pin1 pin1 pin4 pin5";
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   width: 1370px;
   max-width: calc(100% - 20px);
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 10px;
 }
 .pinnedSection h2 {
@@ -173,6 +173,45 @@
 }
 .pinnedSection .pinned5:hover {
   transform: translateY(-5px);
+}
+.pinnedSection:hover {
+  cursor: pointer;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogContainer .blog1 {
+  background-color: rgb(100, 100, 231);
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 900px;
+  padding: 130px 150px;
+  border-radius: 20px;
+}
+.blogContainer .blog2 {
+  background-color: rgb(231, 100, 100);
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 900px;
+  padding: 130px 150px;
+  border-radius: 20px;
+}
+.blogContainer .blog3 {
+  background-color: rgb(100, 231, 100);
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 900px;
+  padding: 130px 150px;
+  border-radius: 20px;
 }
 
 body,

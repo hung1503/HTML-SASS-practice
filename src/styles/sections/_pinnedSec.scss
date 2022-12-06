@@ -4,11 +4,11 @@
   grid-template-areas:
     "pin1 pin1 pin2 pin3"
     "pin1 pin1 pin4 pin5";
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   width: 1370px;
   max-width: calc(100% - 20px);
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 10px;
 
   & h2 {
@@ -92,5 +92,9 @@
     &:hover {
       transform: translateY(-5px);
     }
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

@@ -14,3 +14,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@mixin blogContainer {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 900px;
+  padding: 130px 150px;
+  border-radius: 20px;
+}

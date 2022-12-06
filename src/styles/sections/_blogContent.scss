@@ -1,0 +1,24 @@
+// .blogSection {
+//   display: flex;
+// }
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .blog1 {
+    background-color: rgb(100, 100, 231);
+    @include blogContainer;
+  }
+
+  & .blog2 {
+    background-color: rgb(231, 100, 100);
+    @include blogContainer;
+  }
+
+  & .blog3 {
+    background-color: rgb(100, 231, 100);
+    @include blogContainer;
+  }
+}
