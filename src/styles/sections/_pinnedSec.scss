@@ -21,7 +21,7 @@
 
   & .pinned1 {
     @include backgroundImage(
-      "../styles/images/pic5.jpg",
+      "../styles/images/pinnedImgs/pic5.jpg",
       rgba(15, 15, 20, 0.25)
     );
     @include pinnedcontainer(pin1, rgba(15, 15, 20, 0.25));
@@ -38,7 +38,7 @@
 
   & .pinned2 {
     @include backgroundImage(
-      "../styles/images/pic2.jpg",
+      "../styles/images/pinnedImgs/pic2.jpg",
       rgba(20, 36, 255, 0.741)
     );
     @include pinnedcontainer(pin2, rgba(20, 36, 255, 0.741));
@@ -65,7 +65,7 @@
 
   & .pinned4 {
     @include backgroundImage(
-      "../styles/images/pic3.jpg",
+      "../styles/images/pinnedImgs/pic3.jpg",
       rgba(119, 0, 143, 0.486)
     );
     @include pinnedcontainer(pin4, rgba(119, 0, 143, 0.486));
@@ -81,7 +81,7 @@
   & .pinned5 {
     color: #333350;
     @include backgroundImage(
-      "../styles/images/pic4.jpg",
+      "../styles/images/pinnedImgs/pic4.jpg",
       rgba(255, 158, 216, 0.808)
     );
     @include pinnedcontainer(pin5, rgba(255, 158, 216, 0.808));
@@ -92,9 +92,5 @@
     &:hover {
       transform: translateY(-5px);
     }
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }

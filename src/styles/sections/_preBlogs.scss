@@ -1,0 +1,104 @@
+.preSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noti-text {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin: 30px;
+}
+
+.pastBlog {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "blog1 blog1 blog1 blog2 blog2 blog2"
+    "blog3 blog3 blog4 blog4 blog5 blog5";
+  gap: 20px;
+  justify-content: center;
+  width: 1200px;
+  margin: 1rem;
+  & .tag-box {
+    display: flex;
+  }
+  & h1 {
+    font-size: 1.7rem;
+  }
+  & .pastBlog1 {
+    @include pastContainer(blog1, $darkTextColor);
+    @include backgroundImage(
+      "../styles/images/preBlogImgs/pic10.jpg",
+      rgba(#eebeff, 0.85)
+    );
+    & .divider {
+      @include divider($darkTextColor);
+    }
+    & .tag-word {
+      @include keyTag($darkTextColor, rgba(#eebeff, 0.85));
+    }
+  }
+
+  & .pastBlog2 {
+    @include pastContainer(blog2, $darkTextColor);
+    @include backgroundImage(
+      "../styles/images/preBlogImgs/pic6.jpg",
+      rgba(#ffb469, 0.85)
+    );
+    & .tag-word {
+      @include keyTag($darkTextColor, rgba(#ffb469, 0.85));
+    }
+  }
+
+  & .pastBlog3 {
+    @include pastContainer(blog3, $textColor);
+    @include backgroundImage(
+      "../styles/images/preBlogImgs/pic11.jpg",
+      rgba(#0f0f14, 0.35)
+    );
+    & .tag-word {
+      @include keyTag($textColor, rgba(#0f0f14, 1));
+    }
+  }
+
+  & .pastBlog4 {
+    @include pastContainer(blog4, $darkTextColor);
+    @include backgroundImage(
+      "../styles/images/preBlogImgs/pic12.jpg",
+      rgba(#ff9ed8, 0.85)
+    );
+    & .divider {
+      @include divider($darkTextColor);
+    }
+    & .tag-word {
+      @include keyTag($darkTextColor, rgba(#ff9ed8, 0.85));
+    }
+  }
+
+  & .pastBlog5 {
+    @include pastContainer(blog5, $textColor);
+    @include backgroundImage(
+      "../styles/images/preBlogImgs/pic7.jpg",
+      rgba(#0f0f14, 0.35)
+    );
+    & .divider {
+      @include divider($textColor);
+    }
+    & .tag-word {
+      @include keyTag($textColor, rgba(#0f0f14, 1));
+    }
+  }
+}
+.load-more-btn {
+  width: 850px;
+  max-width: 100%;
+  @include button;
+  &:hover {
+    background-color: #ffb469;
+    color: $darkTextColor;
+    width: 900px;
+  }
+}

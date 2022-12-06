@@ -1,0 +1,85 @@
+.subscriptionSection {
+  display: flex;
+  justify-content: center;
+}
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  justify-content: center;
+  width: 40%;
+
+  & h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.text-typing h4 {
+  overflow: hidden;
+  border-right: 0.1em solid $textColor;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.08em;
+  animation: typing 4s steps(28, end) infinite alternate,
+    blink-bar 0.75s step-end infinite;
+  animation-delay: 5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-bar {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $textColor;
+  }
+}
+.subscriptionForm {
+  font-family: $fontFamily;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  & input {
+    display: flex;
+    background-color: $backgroundColor;
+    color: $textColor;
+    border: none;
+    border-bottom: 1px solid $textColor;
+    width: 70%;
+    font-size: 1.2rem;
+    margin: 30px;
+    text-align: center;
+    transition: width 0.5s;
+    &:focus {
+      outline: none;
+      width: 80%;
+    }
+    &::placeholder {
+      color: #545260;
+    }
+  }
+  & button {
+    @include button;
+    padding: 30px 50px;
+    letter-spacing: 3px;
+    &:hover {
+      background-color: #ffb469;
+      color: $darkTextColor;
+      padding: 30px 60px;
+    }
+  }
+}

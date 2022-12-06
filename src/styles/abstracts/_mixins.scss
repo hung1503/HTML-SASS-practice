@@ -1,6 +1,7 @@
 @mixin pinnedcontainer($gridArea, $background-color) {
   border-radius: 20px;
   grid-area: $gridArea;
+  cursor: pointer;
   background-color: $background-color;
   min-height: 200px;
   padding: 10px 20px;
@@ -16,11 +17,74 @@
 }
 
 @mixin blogContainer {
-  margin: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 900px;
   padding: 130px 150px;
   border-radius: 20px;
+  z-index: -1;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+@mixin divider($color) {
+  width: 30px;
+  border: 0.5px solid $color;
+}
+
+@mixin pinTag($bgcolor, $textColor) {
+  background-color: $bgcolor;
+  color: $textColor;
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+
+@mixin keyTag($color, $hoverColor) {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: $color;
+  border: 1px solid $color;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+  &:hover {
+    background-color: $color;
+    color: $hoverColor;
+  }
+}
+
+@mixin pastContainer($gridArea, $txtColor) {
+  color: $txtColor;
+  border-radius: 20px;
+  grid-area: $gridArea;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+@mixin button {
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: #363643;
+  color: $textColor;
+  letter-spacing: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }

@@ -49,12 +49,13 @@
   margin-top: 50px;
 }
 .pinnedSection .pinned1 {
-  background-image: linear-gradient(rgba(15, 15, 20, 0.25), rgba(15, 15, 20, 0.25)), url("../styles/images/pic5.jpg");
+  background-image: linear-gradient(rgba(15, 15, 20, 0.25), rgba(15, 15, 20, 0.25)), url("../styles/images/pinnedImgs/pic5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   grid-area: pin1;
+  cursor: pointer;
   background-color: rgba(15, 15, 20, 0.25);
   min-height: 200px;
   padding: 10px 20px;
@@ -77,12 +78,13 @@
   transform: translateY(-5px);
 }
 .pinnedSection .pinned2 {
-  background-image: linear-gradient(rgba(20, 36, 255, 0.741), rgba(20, 36, 255, 0.741)), url("../styles/images/pic2.jpg");
+  background-image: linear-gradient(rgba(20, 36, 255, 0.741), rgba(20, 36, 255, 0.741)), url("../styles/images/pinnedImgs/pic2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   grid-area: pin2;
+  cursor: pointer;
   background-color: rgba(20, 36, 255, 0.741);
   min-height: 200px;
   padding: 10px 20px;
@@ -105,6 +107,7 @@
   color: #333350;
   border-radius: 20px;
   grid-area: pin3;
+  cursor: pointer;
   background-color: rgb(255, 180, 105);
   min-height: 200px;
   padding: 10px 20px;
@@ -124,12 +127,13 @@
   transform: translateY(-5px);
 }
 .pinnedSection .pinned4 {
-  background-image: linear-gradient(rgba(119, 0, 143, 0.486), rgba(119, 0, 143, 0.486)), url("../styles/images/pic3.jpg");
+  background-image: linear-gradient(rgba(119, 0, 143, 0.486), rgba(119, 0, 143, 0.486)), url("../styles/images/pinnedImgs/pic3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   grid-area: pin4;
+  cursor: pointer;
   background-color: rgba(119, 0, 143, 0.486);
   min-height: 200px;
   padding: 10px 20px;
@@ -150,12 +154,13 @@
 }
 .pinnedSection .pinned5 {
   color: #333350;
-  background-image: linear-gradient(rgba(255, 158, 216, 0.808), rgba(255, 158, 216, 0.808)), url("../styles/images/pic4.jpg");
+  background-image: linear-gradient(rgba(255, 158, 216, 0.808), rgba(255, 158, 216, 0.808)), url("../styles/images/pinnedImgs/pic4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   grid-area: pin5;
+  cursor: pointer;
   background-color: rgba(255, 158, 216, 0.808);
   min-height: 200px;
   padding: 10px 20px;
@@ -174,44 +179,444 @@
 .pinnedSection .pinned5:hover {
   transform: translateY(-5px);
 }
-.pinnedSection:hover {
-  cursor: pointer;
-}
 
-.blogContainer {
+.blogSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.blogContainer .blog1 {
-  background-color: rgb(100, 100, 231);
+.blogSection .blogContainer {
+  overflow: hidden;
+  position: relative;
   margin: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 900px;
-  padding: 130px 150px;
   border-radius: 20px;
 }
-.blogContainer .blog2 {
-  background-color: rgb(231, 100, 100);
-  margin: 25px;
+.blogSection .blog1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 900px;
   padding: 130px 150px;
   border-radius: 20px;
+  z-index: -1;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.75), rgba(15, 15, 20, 0.75)), url("../styles/images/mainBlogImgs/pic9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.blogContainer .blog3 {
-  background-color: rgb(100, 231, 100);
-  margin: 25px;
+.blogSection .blog1:hover {
+  transform: scale(1.01);
+}
+.blogSection .blog1 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.blogSection .blog1 .tag-word:hover {
+  background-color: #ebebeb;
+  color: rgba(15, 15, 20, 0.75);
+}
+.blogSection .blog2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 900px;
   padding: 130px 150px;
   border-radius: 20px;
+  z-index: -1;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  background-image: linear-gradient(rgba(254, 214, 114, 0.85), rgba(254, 214, 114, 0.85)), url("../styles/images/mainBlogImgs/pic8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333350;
+}
+.blogSection .blog2:hover {
+  transform: scale(1.01);
+}
+.blogSection .blog2 .description {
+  font-size: 1.2rem;
+}
+.blogSection .blog2 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #333350;
+  border: 1px solid #333350;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.blogSection .blog2 .tag-word:hover {
+  background-color: #333350;
+  color: rgba(254, 214, 114, 0.85);
+}
+.blogSection .blog2 .divider {
+  width: 30px;
+  border: 0.5px solid #333350;
+}
+.blogSection .blog3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 900px;
+  padding: 130px 150px;
+  border-radius: 20px;
+  z-index: -1;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.35), rgba(15, 15, 20, 0.35)), url("../styles/images/mainBlogImgs/pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blogSection .blog3:hover {
+  transform: scale(1.01);
+}
+.blogSection .blog3 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.blogSection .blog3 .tag-word:hover {
+  background-color: #ebebeb;
+  color: rgba(15, 15, 20, 0.75);
+}
+.blogSection .blogContainer__title {
+  font-size: 2.5rem;
+  font-weight: bold 700;
+  margin-bottom: 20px;
+}
+.blogSection .tag-box {
+  display: flex;
+}
+
+.preSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noti-text {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin: 30px;
+}
+
+.pastBlog {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "blog1 blog1 blog1 blog2 blog2 blog2" "blog3 blog3 blog4 blog4 blog5 blog5";
+  gap: 20px;
+  justify-content: center;
+  width: 1200px;
+  margin: 1rem;
+}
+.pastBlog .tag-box {
+  display: flex;
+}
+.pastBlog h1 {
+  font-size: 1.7rem;
+}
+.pastBlog .pastBlog1 {
+  color: #333350;
+  border-radius: 20px;
+  grid-area: blog1;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(238, 190, 255, 0.85), rgba(238, 190, 255, 0.85)), url("../styles/images/preBlogImgs/pic10.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pastBlog .pastBlog1:hover {
+  transform: scale(1.01);
+}
+.pastBlog .pastBlog1 .divider {
+  width: 30px;
+  border: 0.5px solid #333350;
+}
+.pastBlog .pastBlog1 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #333350;
+  border: 1px solid #333350;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.pastBlog .pastBlog1 .tag-word:hover {
+  background-color: #333350;
+  color: rgba(238, 190, 255, 0.85);
+}
+.pastBlog .pastBlog2 {
+  color: #333350;
+  border-radius: 20px;
+  grid-area: blog2;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(255, 180, 105, 0.85), rgba(255, 180, 105, 0.85)), url("../styles/images/preBlogImgs/pic6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pastBlog .pastBlog2:hover {
+  transform: scale(1.01);
+}
+.pastBlog .pastBlog2 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #333350;
+  border: 1px solid #333350;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.pastBlog .pastBlog2 .tag-word:hover {
+  background-color: #333350;
+  color: rgba(255, 180, 105, 0.85);
+}
+.pastBlog .pastBlog3 {
+  color: #ebebeb;
+  border-radius: 20px;
+  grid-area: blog3;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.35), rgba(15, 15, 20, 0.35)), url("../styles/images/preBlogImgs/pic11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pastBlog .pastBlog3:hover {
+  transform: scale(1.01);
+}
+.pastBlog .pastBlog3 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.pastBlog .pastBlog3 .tag-word:hover {
+  background-color: #ebebeb;
+  color: #0f0f14;
+}
+.pastBlog .pastBlog4 {
+  color: #333350;
+  border-radius: 20px;
+  grid-area: blog4;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(255, 158, 216, 0.85), rgba(255, 158, 216, 0.85)), url("../styles/images/preBlogImgs/pic12.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pastBlog .pastBlog4:hover {
+  transform: scale(1.01);
+}
+.pastBlog .pastBlog4 .divider {
+  width: 30px;
+  border: 0.5px solid #333350;
+}
+.pastBlog .pastBlog4 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #333350;
+  border: 1px solid #333350;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.pastBlog .pastBlog4 .tag-word:hover {
+  background-color: #333350;
+  color: rgba(255, 158, 216, 0.85);
+}
+.pastBlog .pastBlog5 {
+  color: #ebebeb;
+  border-radius: 20px;
+  grid-area: blog5;
+  padding: 60px 50px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.35), rgba(15, 15, 20, 0.35)), url("../styles/images/preBlogImgs/pic7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pastBlog .pastBlog5:hover {
+  transform: scale(1.01);
+}
+.pastBlog .pastBlog5 .divider {
+  width: 30px;
+  border: 0.5px solid #ebebeb;
+}
+.pastBlog .pastBlog5 .tag-word {
+  display: flex;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  justify-content: center;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
+  padding: 3px 7px;
+  margin: 3px;
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+.pastBlog .pastBlog5 .tag-word:hover {
+  background-color: #ebebeb;
+  color: #0f0f14;
+}
+
+.load-more-btn {
+  width: 850px;
+  max-width: 100%;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: #363643;
+  color: #ebebeb;
+  letter-spacing: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.load-more-btn:hover {
+  background-color: #ffb469;
+  color: #333350;
+  width: 900px;
+}
+
+.subscriptionSection {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  justify-content: center;
+  width: 40%;
+}
+.subscription h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text-typing h4 {
+  overflow: hidden;
+  border-right: 0.1em solid #ebebeb;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.08em;
+  animation: typing 4s steps(28, end) infinite alternate, blink-bar 0.75s step-end infinite;
+  animation-delay: 5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-bar {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ebebeb;
+  }
+}
+.subscriptionForm {
+  font-family: "Corben", cursive;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.subscriptionForm input {
+  display: flex;
+  background-color: #2a2a35;
+  color: #ebebeb;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  width: 70%;
+  font-size: 1.2rem;
+  margin: 30px;
+  text-align: center;
+  transition: width 0.5s;
+}
+.subscriptionForm input:focus {
+  outline: none;
+  width: 80%;
+}
+.subscriptionForm input::placeholder {
+  color: #545260;
+}
+.subscriptionForm button {
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: #363643;
+  color: #ebebeb;
+  letter-spacing: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 30px 50px;
+  letter-spacing: 3px;
+}
+.subscriptionForm button:hover {
+  background-color: #ffb469;
+  color: #333350;
+  padding: 30px 60px;
 }
 
 body,

@@ -1,24 +1,62 @@
-// .blogSection {
-//   display: flex;
-// }
-
-.blogContainer {
+.blogSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  & .blogContainer {
+    overflow: hidden;
+    position: relative;
+    margin: 25px;
+    border-radius: 20px;
+  }
+
   & .blog1 {
-    background-color: rgb(100, 100, 231);
     @include blogContainer;
+    @include backgroundImage(
+      "../styles/images/mainBlogImgs/pic9.jpg",
+      rgba(15, 15, 20, 0.75)
+    );
+    & .tag-word {
+      @include keyTag($textColor, rgba(15, 15, 20, 0.75));
+    }
   }
 
   & .blog2 {
-    background-color: rgb(231, 100, 100);
     @include blogContainer;
+    @include backgroundImage(
+      "../styles/images/mainBlogImgs/pic8.jpg",
+      rgba(254, 214, 114, 0.85)
+    );
+    color: $darkTextColor;
+
+    & .description {
+      font-size: 1.2rem;
+    }
+    & .tag-word {
+      @include keyTag($darkTextColor, rgba(254, 214, 114, 0.85));
+    }
+    & .divider {
+      @include divider($darkTextColor);
+    }
   }
 
   & .blog3 {
-    background-color: rgb(100, 231, 100);
     @include blogContainer;
+    @include backgroundImage(
+      "../styles/images/mainBlogImgs/pic1.jpg",
+      rgba(#0f0f14, 0.35)
+    );
+    & .tag-word {
+      @include keyTag($textColor, rgba(15, 15, 20, 0.75));
+    }
+  }
+
+  & .blogContainer__title {
+    font-size: 2.5rem;
+    font-weight: $titleFontText;
+    margin-bottom: 20px;
+  }
+  & .tag-box {
+    display: flex;
   }
 }

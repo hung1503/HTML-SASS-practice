@@ -2,11 +2,12 @@
 @import "abstracts/variables/colors";
 @import "abstracts/mixins";
 
-@import "features/tags";
-
 @import "sections/header";
 @import "sections/pinnedSec";
 @import "sections/blogContent";
+@import "sections/preBlogs";
+@import "sections/subscription";
+@import "sections/footer";
 
 body,
 html {
