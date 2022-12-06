@@ -1,7 +1,7 @@
 .headerSection {
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .headerSection a {
   text-decoration: none;
@@ -31,10 +31,154 @@
   z-index: 99;
 }
 
+.pinnedSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "pin1 pin1 pin2 pin3" "pin1 pin1 pin4 pin5";
+  gap: 10px;
+  justify-content: center;
+  width: 1370px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 10px;
+}
+.pinnedSection h2 {
+  font-size: 1rem;
+}
+.pinnedSection .info {
+  margin-top: 50px;
+}
+.pinnedSection .pinned1 {
+  background-image: linear-gradient(rgba(15, 15, 20, 0.25), rgba(15, 15, 20, 0.25)), url("../styles/images/pic5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  grid-area: pin1;
+  background-color: rgba(15, 15, 20, 0.25);
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.pinnedSection .pinned1 .info {
+  margin-top: 290px;
+}
+.pinnedSection .pinned1 .pinnedTag {
+  background-color: #ebebeb;
+  color: rgba(15, 15, 20, 0.75);
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+.pinnedSection .pinned1:hover {
+  transform: translateY(-5px);
+}
+.pinnedSection .pinned2 {
+  background-image: linear-gradient(rgba(20, 36, 255, 0.741), rgba(20, 36, 255, 0.741)), url("../styles/images/pic2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  grid-area: pin2;
+  background-color: rgba(20, 36, 255, 0.741);
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.pinnedSection .pinned2 .pinnedTag {
+  background-color: #ebebeb;
+  color: rgba(20, 36, 255, 0.741);
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+.pinnedSection .pinned2:hover {
+  transform: translateY(-5px);
+}
+.pinnedSection .pinned3 {
+  color: #333350;
+  border-radius: 20px;
+  grid-area: pin3;
+  background-color: rgb(255, 180, 105);
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.pinnedSection .pinned3 .pinnedTag {
+  background-color: #0f0f14;
+  color: rgb(255, 180, 105);
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+.pinnedSection .pinned3:hover {
+  transform: translateY(-5px);
+}
+.pinnedSection .pinned4 {
+  background-image: linear-gradient(rgba(119, 0, 143, 0.486), rgba(119, 0, 143, 0.486)), url("../styles/images/pic3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  grid-area: pin4;
+  background-color: rgba(119, 0, 143, 0.486);
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.pinnedSection .pinned4 .pinnedTag {
+  background-color: #ebebeb;
+  color: rgba(119, 0, 143, 0.486);
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+.pinnedSection .pinned4:hover {
+  transform: translateY(-5px);
+}
+.pinnedSection .pinned5 {
+  color: #333350;
+  background-image: linear-gradient(rgba(255, 158, 216, 0.808), rgba(255, 158, 216, 0.808)), url("../styles/images/pic4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  grid-area: pin5;
+  background-color: rgba(255, 158, 216, 0.808);
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.pinnedSection .pinned5 .pinnedTag {
+  background-color: #0f0f14;
+  color: rgba(255, 158, 216, 0.808);
+  margin-top: 15px;
+  display: flex;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  width: 80px;
+  justify-content: center;
+}
+.pinnedSection .pinned5:hover {
+  transform: translateY(-5px);
+}
+
 body,
 html {
   font-family: "Corben", cursive;
-  background-color: #363643;
+  background-color: #2a2a35;
   color: #ebebeb;
   margin: 0;
   padding: 0;

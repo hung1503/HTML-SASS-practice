@@ -1,0 +1,16 @@
+@mixin pinnedcontainer($gridArea, $background-color) {
+  border-radius: 20px;
+  grid-area: $gridArea;
+  background-color: $background-color;
+  min-height: 200px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin backgroundImage($image, $background-color) {
+  background-image: linear-gradient($background-color, $background-color),
+    url($image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

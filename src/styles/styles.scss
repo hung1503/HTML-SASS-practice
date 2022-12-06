@@ -1,13 +1,17 @@
-@use "variables/fonts.scss";
-@use "variables/colors.scss";
+@import "abstracts/variables/fonts";
+@import "abstracts/variables/colors";
+@import "abstracts/mixins";
 
-@use "sections/header.scss";
+@import "features/tags";
+
+@import "sections/header";
+@import "sections/main";
 
 body,
 html {
-  font-family: fonts.$fontFamily;
-  background-color: colors.$backgroundColor;
-  color: colors.$textColor;
+  font-family: $fontFamily;
+  background-color: $backgroundColor;
+  color: $textColor;
   margin: 0;
   padding: 0;
 }
