@@ -1,0 +1,39 @@
+.footerSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1.5rem 2rem;
+  & a {
+    text-decoration: none;
+    color: $textColor;
+  }
+
+  & .navbar {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+    & a {
+      margin: 0 0.9rem;
+    }
+  }
+  & .credit {
+    font-size: 0.7rem;
+    color: rgba($textColor, 0.8);
+    letter-spacing: 1px;
+  }
+
+  & .footer-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+
+    & a {
+      margin: 0 0.9rem;
+      transition: all 0.4s;
+      &:hover {
+        color: #ffb469;
+      }
+    }
+  }
+}

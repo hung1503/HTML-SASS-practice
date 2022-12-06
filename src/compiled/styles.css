@@ -619,6 +619,43 @@
   padding: 30px 60px;
 }
 
+.footerSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1.5rem 2rem;
+}
+.footerSection a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+.footerSection .navbar {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footerSection .navbar a {
+  margin: 0 0.9rem;
+}
+.footerSection .credit {
+  font-size: 0.7rem;
+  color: rgba(235, 235, 235, 0.8);
+  letter-spacing: 1px;
+}
+.footerSection .footer-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.footerSection .footer-social a {
+  margin: 0 0.9rem;
+  transition: all 0.4s;
+}
+.footerSection .footer-social a:hover {
+  color: #ffb469;
+}
+
 body,
 html {
   font-family: "Corben", cursive;
