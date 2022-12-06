@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/hung1503/fs13-CSS-SASS/issues"
   },
-  "homepage": "https://github.com/hung1503/fs13-CSS-SASS#readme",
+  "homepage": "https://github.com/hung1503/fs13-CSS-SASS/src/index.html",
   "dependencies": {
     "sass": "^1.56.1"
   }
